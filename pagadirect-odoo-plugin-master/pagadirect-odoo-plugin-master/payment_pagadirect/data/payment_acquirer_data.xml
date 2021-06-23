@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="payment_acquirer_pagadirect" model="payment.acquirer">
+            <field name="name">PagaDirect</field>
+            <field name="image_128" type="base64" file="payment_pagadirect/static/src/img/pagadirect_icon.png"/>
+            <field name="provider">pagadirect</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="view_template_id" ref="pagadirect_form"/>
+            <field name="module_id" ref="base.module_payment_pagadirect"/>
+        </record>
+    </data>
+</odoo>
